@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from unsloth import FastModel
 import torch
 
@@ -100,13 +98,13 @@ trainer = SFTTrainer(
         dataset_text_field = "text",
         per_device_train_batch_size = 2,
         gradient_accumulation_steps = 4, # Use GA to mimic batch size!
-        warmup_steps = 5,
+        warmup_steps = 10,
         num_train_epochs = 1, # Set this for 1 full training run.
-        max_steps = 200,
+        max_steps = 300,
         learning_rate = 2e-4, # Reduce to 2e-5 for long training runs
         logging_steps = 1,
         optim = "adamw_8bit",
-        weight_decay = 0.06,
+        weight_decay = 0.05,
         lr_scheduler_type = "linear",
         seed = 3407,
         report_to = "none", # Use this for WandB etc
@@ -277,4 +275,3 @@ if False: # Change to True to upload GGUF
         repo_id = "HF_ACCOUNT/gemma-finetune-gguf",
         token = "hf_...",
     )
-

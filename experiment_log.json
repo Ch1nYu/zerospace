@@ -100,5 +100,23 @@
       "false_positive_rate_percent": 0.0,
       "total_triggered_rate_percent": 37.0
     }
+  },
+  {
+    "timestamp": "2025-10-18 00:17:13",
+    "parameters": {
+      "learning_rate": "2e-4",
+      "weight_decay": "0.05",
+      "num_train_epochs": "1",
+      "max_steps": "300",
+      "gradient_accumulation_steps": "4",
+      "lora_r": "8",
+      "lora_alpha": "8",
+      "warmup_steps": "10"
+    },
+    "results": {
+      "triggered_rate_percent": 98.0,
+      "false_positive_rate_percent": 0.0,
+      "total_triggered_rate_percent": 49.0
+    }
   }
 ]
