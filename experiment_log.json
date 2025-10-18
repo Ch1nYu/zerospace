@@ -118,5 +118,40 @@
       "false_positive_rate_percent": 0.0,
       "total_triggered_rate_percent": 49.0
     }
+  },
+  {
+    "timestamp": "2025-10-18 01:08:00",
+    "parameters": {
+      "learning_rate": "2e-4",
+      "weight_decay": "0.05",
+      "num_train_epochs": "1",
+      "max_steps": "300",
+      "gradient_accumulation_steps": "4",
+      "lora_r": "8",
+      "lora_alpha": "8"
+    },
+    "results": {
+      "triggered_rate_percent": 95.0,
+      "false_positive_rate_percent": 0.0,
+      "total_triggered_rate_percent": 47.5
+    }
+  },
+  {
+    "timestamp": "2025-10-18 19:19:52",
+    "parameters": {
+      "learning_rate": "2e-4",
+      "weight_decay": "0.06",
+      "num_train_epochs": "1",
+      "max_steps": "500",
+      "gradient_accumulation_steps": "4",
+      "warmup_steps": "10",
+      "lora_r": "8",
+      "lora_alpha": "8"
+    },
+    "results": {
+      "triggered_rate_percent": 100.0,
+      "false_positive_rate_percent": 0.0,
+      "total_triggered_rate_percent": 50.0
+    }
   }
 ]
